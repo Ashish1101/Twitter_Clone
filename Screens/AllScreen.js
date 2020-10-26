@@ -11,12 +11,12 @@ const thirdImage = "https://instagram.fdel25-1.fna.fbcdn.net/v/t51.2885-15/e35/3
 const fourthImage = "https://instagram.fdel25-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/118515179_166529995003334_5629804612136756848_n.jpg?_nc_ht=instagram.fdel25-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=mr_l0wO2Rq4AX8vs2FO&_nc_tp=15&oh=4cc26520c08abae30f62777e62189f70&oe=5FBDFEDA"
 
 const AllScreen = () => {
-    const arr = [<NotComp image={firstImage} />
+    const arr = [<NotComp image={firstImage} name="decoder11" message="help me with javascript" info="stuck at loop "  />
          , <AnotherNotComp image={secondImage}/>
-          , <NotComp image={fourthImage} />
-           , <NotComp image={thirdImage} />,
+          , <NotComp image={fourthImage} name="ashish98" message="Your code is not working" info="help me with Python " />
+           , <NotComp image={thirdImage} name="Alien2" message="hello new in coding"  info="Need help " />,
             <AnotherNotComp image={firstImage}/> 
-            , <NotComp image={secondImage} />]
+            , <NotComp image={secondImage} name="coderguy98" message="help me with typecript" info="stuck at loop "  />]
     return (
         <FlatList
         data={arr}

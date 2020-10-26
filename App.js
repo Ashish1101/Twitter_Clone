@@ -9,7 +9,9 @@ import { Provider as PaperProvider , DefaultTheme } from 'react-native-paper'
 
 export default function App() {
   return (
-     <PaperProvider  >
+    
+     <PaperProvider>
+       <StatusBar backgroundColor="#0089de" networkActivityIndicatorVisible />
         <NavigationContainer >
            <DrawerNavigator />
         </NavigationContainer>

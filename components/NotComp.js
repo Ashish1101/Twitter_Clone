@@ -3,7 +3,7 @@ import {View} from 'react-native'
 import {Card , Paragraph , Avatar , Title} from 'react-native-paper'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const NotComp = ({image}) => {
+const NotComp = ({image , name , message , info}) => {
     return (
        <View>
             <Card style={{borderBottomWidth:0.2}}>
@@ -13,8 +13,8 @@ const NotComp = ({image}) => {
                </View>
                 <View style={{flex:9}}>
                    <Avatar.Image size={60} source={{uri:image}} />
-                   <Paragraph style={{fontSize:15, fontWeight:'400'}}>Recent Tweet from <Title style={{fontSize:18}}>Elon Musk</Title></Paragraph>
-                   <Paragraph>Congratulation SpaceX Team!</Paragraph>
+                 <Paragraph style={{fontSize:15, fontWeight:'400'}}>{info}<Title style={{fontSize:18}}>{name}</Title></Paragraph>
+                 <Paragraph>{message}</Paragraph>
                 </View>
                </Card.Content>
             </Card>

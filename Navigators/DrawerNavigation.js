@@ -71,7 +71,7 @@ function DrawerContent(props) {
                 <MaterialCommunityIcons name="format-list-numbered" size={24} color="black" />
               )}
               label="Account"
-              onPress={() => props.navigation.navigate('RMS')}
+              onPress={() => console.log('Account')}
             />
             <DrawerItem
              
@@ -83,14 +83,14 @@ function DrawerContent(props) {
                 />
               )}
               label="Bookmarks"
-              onPress={() => props.navigation.navigate('Quiz')}
+              onPress={() => console.log('bookmarks')}
             />
              <DrawerItem
               icon={({ color, size }) => (
                 <FontAwesome name="bolt" size={size} style={{marginLeft:5}} color={color} />
               )}
               label="  Profile"
-              onPress={() => props.navigation.navigate('Home')}
+              onPress={() => console.log('profile')}
             />
           </Drawer.Section>
           <Drawer.Section title="Preferences">
@@ -121,6 +121,7 @@ const DrawerNavigator = () => {
     return (
         <DrawerNative.Navigator initialRouteName="Main"  drawerStyle={{
             width: 240,
+            
           }} drawerContent={(props) => <DrawerContent {...props}/>} >
             <DrawerNative.Screen name="Main" component={MainNavigator} />
         </DrawerNative.Navigator>

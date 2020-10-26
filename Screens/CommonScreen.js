@@ -7,7 +7,7 @@ import {TouchableRipple} from 'react-native-paper'
 const CommonScreen = () => {
     const navigation = useNavigation()
     return (
-        <View style={{flexDirection:'row' , justifyContent:'space-around' , backgroundColor:'#333' , paddingVertical:8}}>
+        <View style={{flexDirection:'row' , justifyContent:'space-around' , backgroundColor:'#0369a8' , paddingVertical:8}}>
                <TouchableRipple style={style.btn}  onPress={() => navigation.navigate('Home')}>
                <Feather style={style.icon} name="home" size={24} color="white" />
                </TouchableRipple>

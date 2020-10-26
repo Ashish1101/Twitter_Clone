@@ -19,7 +19,7 @@ const MainNavigator = ({navigation}) => {
            <TouchableOpacity onPress={() => navigation.toggleDrawer() } style={{marginLeft:6 , padding:10}}>
                <Feather name="menu" color='black' size={30} />
            </TouchableOpacity>
-       )}}>
+       ) , headerStyle: {backgroundColor:'white'}}}>
            <Stack.Screen name="Home" component={Home} options={{headerTitle: props => <AntDesign name="twitter" style={{alignSelf:'center' , marginRight:50}} size={24} color="#1290ff" />}} />
            <Stack.Screen name="Search" component={Search} options={{headerTitle: props => <SearchBar/>}} />
            <Stack.Screen name="Notification" component={Notification} />
